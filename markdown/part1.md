@@ -1,4 +1,5 @@
 # Hands on Lab 1
+![helloworld](images/helloworld.png)
 ## Hello world
 
 !SUB

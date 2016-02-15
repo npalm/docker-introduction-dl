@@ -1,4 +1,5 @@
 # Hands On Lab 2
+![dockerfile](images/dockerfile.png)
 ## Building a image
 
 !SUB

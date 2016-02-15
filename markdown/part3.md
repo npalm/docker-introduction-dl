@@ -1,4 +1,5 @@
 # Hands On Lab 3
+![networking](images/turtles.jpg)
 ## Networking
 
 !SUB
