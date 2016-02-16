@@ -46,7 +46,7 @@ RMI a container image (delete image)
 
 ```
  docker pull mongo:latest     # pull the mongo image from the registry
- docker inpsect mongo:latest  # list information of the container
+ docker inspect mongo:latest  # list information of the container
  docker run -p 27017:27017 \
         --name my-mongo -d \
         mongo:latest          # create and start a mongo container
