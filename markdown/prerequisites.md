@@ -21,9 +21,8 @@
 
 !SUB
 ### Installation
-* Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
-* Once vagrant is installed you open an terminal
+* Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html)
+* Once VirtualBox and Vagrant are installed you open an terminal
   * Create a new directory.
 ```
 mkdir docker-introduction
@@ -37,7 +36,7 @@ vagrant init npalm/ubuntu-1404-dev-desktop
 ```
 vagrant up --provider virtualbox
 ```
- 
+* We have now running Ubuntu linux VM running with all the needed packages for the workshop. The default user is vagrant with password vagrant. 
 
 !SUB
 ### Vagrant basics
