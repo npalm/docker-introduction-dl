@@ -3,15 +3,12 @@
 ## Hello world
 
 !SUB
+### Some notes
 * All steps assumes you have a command line open.
-  * For Windows users.
-    * Commands where a shell is invoked like `/bin/bash` will fail, please add a trailing slash.
-    * You can also login the boot2docker vm: `boot2docker ssh`
-  * Linux users can do the all exercises just in a normal terminal.
   * Almost all steps formatted as code can be executed.
     *  `\` is a line break and can be copied and pasted.
     * `< ... > ` indicates you should replace the value
-* Have fun
+* Since the VM includes a local registry cache some steps are slight different for a VM. These steps are prefixed with \[VM\].
 
 
 !SUB
@@ -53,21 +50,25 @@ docker images
 
 !SUB
 ### Start a docker container
-* So time for hello world.
+* Time for hello world.
 * With the next command you start an ubuntu container and execute the command echo some famous string.
 ```
 docker run ubuntu echo "hello world"
 ```
-* Running the command above creates, starts and exit the ubuntu container. Observe the output with commands below.
+* Running the command above creates, starts and exit the ubuntu container. 
+- Observe the output with commands below, remember you can get help by executing `docker help` or `docker help ps`
 ```
 docker ps
 docker ps -a
-docker rm <id> # to remove the container
+```
+- Remove the container
+```
+docker rm <id or name>
 ```
 
 !SUB
 ### Start a docker container
-* Start a container as deamon which print het string "hello world" every second.
+* Start a container as deamon which prints the string "hello world" every second.
 ```
 docker run -d --name mycontainer ubuntu /bin/sh -c \
    "while true; do echo Hello world; sleep 1; done"
@@ -88,7 +89,7 @@ docker ps -a
 !SUB
 ### Update a docker image
 
-* Changes made in a container are only persists in that container. At the moment the container is destroyed the change is lost.
+* Changes made in a container are persisted only in that container. At the moment the container is destroyed the change is lost too.
 * Commit a change made in a container to an image, persists the change.
 
 ```
