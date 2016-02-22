@@ -25,7 +25,19 @@
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 * Once vagrant is installed you open an terminal
   * Create a new directory.
-  * Run the command `vagrant init npalm/ubuntu-1404-dev-desktop; vagrant up --provider virtualbox`. This command will download the virtual machine.
+```
+mkdir docker-introduction
+cd docker-introduction
+```
+  * Initialize vagrant and download the images when not available locally. 
+```
+vagrant init npalm/ubuntu-1404-dev-desktop
+```
+  * Start the virtual environment for the workshop.
+```
+vagrant up --provider virtualbox
+```
+ 
 
 !SUB
 ### Vagrant basics
